@@ -43,8 +43,12 @@ function viewByDep(){
                 if (error) throw error;
             })
         }
+        connection.query("SELECT * FROM departments", function(error, result){
+            console.table(result);
+        })
         connection.end();
     })
+
 }
 
 function addDepartment(){
@@ -64,7 +68,9 @@ function addDepartment(){
             "INSERT INTO bamazon.departments SET ?",
             {
                 department_name:user.department_name,
-                over_head_costs:user.over_head_costs
+                over_head_costs:user.over_head_costs,
+                product_sales:0,
+                total_profit: 0-user.over_head_costs
             },
             function(err, res){
                 if (err) throw err;
