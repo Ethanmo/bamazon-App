@@ -1,0 +1,24 @@
+{
+  "name": "bamazon-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethanmo/bamazon-App.git"
+  },
+  "author": "Ethan Mo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ethanmo/bamazon-App/issues"
+  },
+  "homepage": "https://github.com/Ethanmo/bamazon-App#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "inquirer": "^6.2.2",
+    "mysql": "^2.16.0"
+  }
+}
